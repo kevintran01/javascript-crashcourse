@@ -2,10 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>JS HTML DOM</title>
+    <style>
+        body {
+            background-color: lightyellow;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin-right: 20%;
+            margin-left: 20%;
+        }
+    </style>
 </head>
 <body>
-<h1>Working with JS HTML Dom</h1>
+<h1>Working with JS HTML DOM</h1>
 <h2 id="bodyText"></h2>
 
 <br>
@@ -18,7 +30,28 @@
 
 <p id="demo"></p>
 
+<h4 id="id01">Old Heading</h4>
 
-</body>
+<h3>Changing the Value of an src attribute</h3>
+<img id="myImage" src="images" alt="sunset" width="200px" height="160px">
+<p>The original image was sunset.jpg, but using the javascript method <i>document.getElementById('myImage').src =
+    "images/sunset1.jpg";</i> we changed the original photo to sunset(1).jpg</p>
+
+
+<p id="p1">Hello World</p>
+<p id="p2">Hello World</p>
+<p>The following javascript code <i>document.getElementById('p2').style.'property' = value; changed the text larger and
+    changed text color to blue</i></p>
+
 <script src="js.html.dom.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
 </html>
