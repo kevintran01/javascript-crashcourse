@@ -1,0 +1,1 @@
+document.getElementById("bodyText").innerHTML = "Greetings Class!";
