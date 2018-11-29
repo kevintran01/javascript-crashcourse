@@ -14,3 +14,19 @@ var changeCssStyle = document.getElementById('p2');
 changeCssStyle.style.color = "blue";
 changeCssStyle.style.fontSize = "20px";
 changeCssStyle.style.fontFamily = "Arial";
+
+
+function myMove() {
+    var elem = document.getElementById('animate');
+    var pos = 0;
+    var id = setInterval(frame, 5);
+    function frame() {
+        if (pos == 275) {
+            clearInterval(id);
+        } else {
+            pos++;
+            elem.style.top = pos + 'px';
+            elem.style.left = pos + 'px';
+        }
+    }
+}

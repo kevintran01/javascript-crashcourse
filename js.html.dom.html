@@ -14,6 +14,20 @@
             margin-right: 20%;
             margin-left: 20%;
         }
+
+        #container {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            background: gold;
+        }
+
+        #animate {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            background-color: black;
+        }
     </style>
 </head>
 <body>
@@ -42,6 +56,29 @@
 <p id="p2">Hello World</p>
 <p>The following javascript code <i>document.getElementById('p2').style.'property' = value; changed the text larger and
     changed text color to blue</i></p>
+
+<h1 id="changeColor">Changing Colors</h1>
+<button type="button" onclick="document.getElementById('changeColor').style.color = 'gold'">Click Me</button>
+
+<h2>How To Hide and show elements using Javascript</h2>
+<p id="p3">
+    This is a text.
+    This is a text.
+    This is a text.
+    This is a text.
+</p>
+
+<input type="button" value="Hide Text" onclick="document.getElementById('p3').style.visibility = 'hidden'">
+<input type="button" value="Show Text" onclick="document.getElementById('p3').style.visibility = 'visible'">
+
+<h2>Javascript HTML DOM Animation</h2>
+<p>
+    <button onclick="myMove()">Click Me</button>
+</p>
+
+<div id="container">
+    <div id="animate"></div>
+</div>
 
 <script src="js.html.dom.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
